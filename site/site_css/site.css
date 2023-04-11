@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+}
+.header-title{
+    width: 20%;
+}
+.header-menu{
+    width: 60%;  
+}
+.header-search{
+    width: 20%;  
+}
