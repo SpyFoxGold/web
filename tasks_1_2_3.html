@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy of Tex</title>
+</head>
+<style>
+    .grey {
+        color:grey;
+    }
+    .lightgrey {
+        color:lightgrey;
+        background:whitesmoke;
+    }
+    .line {
+        color:black;
+        background:whitesmoke;
+    }
+    .blue {
+        color:blue;
+    }
+    .red {
+        color:red;
+    }
+    .green {
+        color:green;
+    }
+    .bl {
+        color:black;
+    }
+    .white {
+        color:black;
+        background:white;
+        padding:10px;
+    }
+    .black {
+        color:white;
+        background:black;
+        padding:10px;
+        padding-right:20px;
+    }
+    .border {
+        border: 1px solid black;
+        padding:10px;
+        width:266px;
+    }
+</style>
+<body>
+    <hr>
+    <p style="font-size:60px"><span style="color:red" >J</span>o<span style="color:blue">y</span> of T<span style="vertical-align:sub">E</span><span style="color:green">X</span></p>
+    <hr>
+    <h1>Creating chart</h1>
+    <p class="grey">To create a chart, we need to instantiate the <span class="line">Chart</span> class. To do this,
+        we need to pass in the 2d context of where we want to draw the chart.
+    Here's an example. </p>
+    <p class="line"><span class="blue">&lt;canvas</span> <span class="green">id=</span><span class="red">"myChart"</span> <span class="green">width=</span><span class="red">"400"</span> <span class="green">height=</span><span class="red">"400"</span><span class="blue">&gt; &lt;/canvas&gt;</span><p></p>
+    <p class="lightgrey"><i>// Get the context of the canvas element we want to select</i><br>
+        <span class="bl"><b>var</b> ctx = <span class="blue">document</span>.getElementById(<span class="red">"myChart"</span>).getContext(<span class="red">"2d"</span>);<br>
+        <b>var</b> myNewChart - <b>new</b> Chart(ctx).PolarArea(data);</span></p>
+    <p class="grey">We can also get the context of our canvans with JQuery. To do this,
+        we need to get the DOM node out of the JQuery collection, and call the <span class="line">getContext("2d")</span>
+         method on that.
+    </p>
+    <p class="lightgrey"><i>// Get context with JQuery - using JQuery's .get() method.</i><br>
+    <span class="bl"><b>var</b> ctx = &#36;(<span class="red">"#myChart"</span>).get(<span class="blue">0</span>).getContext(<span class="red">"2d"</span>);</span><br>
+    <i>// This will get the first returned node in the JQuery collection</i><br>
+    <span class="bl"><b>var</b> myNewChart = <b>new</b> Chart(ctx);</span>
+    </p>
+    <p class="grey">After we've instantiated the Chart class on the canvas we want to draw on,
+        Chart.js will handle the scaling for retina displays.
+    </p>
+    <hr>
+    <h1 class="border"><span class="white">BLACK</span><span class="black">WHITE</span></h1>
+    <hr>
+</body>
+</html>
