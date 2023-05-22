@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <a href="alltasks.html">Все задания</a>
+    <hr/>
+
+    <h1>Анкета посетителя ресторана</h1>
+    <h3>Контактная информация</h3>
+
+    <form action="">
+        <div>
+           <label for="name">Имя</label><br>
+           <input id="name" type="text" placeholder="Имя" name="name" required style="width: 400px">
+        </div><br>
+
+        <div>
+            <label for="phonenumber">Телефон</label><br>
+            <input id="phonenumber" type="text" placeholder="Телефон" name="phonenumber" required style="width: 400px">
+        </div><br>
+
+        <div>
+           <label for="email">E-mail</label><br>
+           <input id="email" type="email" placeholder="E-mail" name="email" required style="width: 400px">
+        </div><br>
+
+        <div>
+            <label for="date">Дата посещения</label><br>
+            <input id="date" type="date"  name="date" required style="width: 400px">
+        </div>
+
+        <h3>Персональная информация</h3>
+
+        <div>
+            <label for="age">Возраст</label><br>
+            <input id="age" type="number" placeholder="Возраст" name="age" required style="width: 400px">
+        </div><br>
+
+        <div>
+            <label for="kitchen">Любимая Кухня</label><br>
+                <select id="kitchen" required style="width: 410px">
+                <option value=”1”>Русская</option>
+                <option value=”2”>Грузинская</option>
+                <option value=”3”>Азиатская</option>
+                <option value=”4”>Итальянская</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="advice">Какие блюда вы бы хотели увидеть в меню?</label><br>
+            <textarea name="advice" id="advice" required style="width: 410px; height: 180px">
+
+            </textarea>
+        </div><br>
+
+        <div>
+            <b>Почему Вы выбрали наше заведение?</b><br>
+            <label>
+                <img src="./imageshome/book.png" alt="" height="20">
+                <input type="checkbox" name="choice" value="1">
+                Недалеко от работы<br>
+            </label>
+
+            <label>
+                <img src="./imageshome/book.png" alt="" height="20">
+                <input type="checkbox" name="choice" value="2">
+                Реклама<br>
+            </label>
+
+            <label>
+                <img src="./imageshome/book.png" alt="" height="20">
+                <input type="checkbox" name="choice" value="3">
+                Посоветовали<br>
+            </label>
+        </div><br>
+
+        <div>
+            <b>Вы будете рекомендовать наше заведение?</b><br>
+            <label>
+                <img src="./imageshome/book.png" alt="" height="20">
+                <input type="checkbox" name="recommend" value="1">
+                Да<br>
+            </label>
+
+            <label>
+                <img src="./imageshome/book.png" alt="" height="20">
+                <input type="checkbox" name="recommend" value="2">
+                Нет<br>
+            </label>
+        </div><br>
+
+       <div>
+            <input type="reset" value="Сброс">
+            <input type="submit" value="Отправить">
+       </div>
+
+       </form>
+       <hr>
+</body>
+</html>
